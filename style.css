@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    margin-top: 20px;
+    border: 1px solid  rgb(78, 72, 172);
+    margin-left: 35vw;
+    height: 220px;
+    width: 600px;
+    background-color: rgb(233, 236, 233);
+}
+
+.header {
+    display: flex;
+    text-align: left;
+    height: 25px;
+    width: 596px;
+    margin: 2px 0 0 2px;
+    background-color: rgb(118, 113, 184);   
+}
+
+.t { 
+    display: flex;
+    width: 500px;
+    height: 25px;
+    margin: 5px 0 0 2px;
+    text-align: left;
+    font-style: bold;
+    color: white;
+}
+a {
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+}
+a :hover{
+    background-color: aqua;
+}
+a :active{
+    background-color: red;
+}
+p #resize :hover{
+    cursor: move;
+}
+
+button { 
+    text-align: center;
+    margin: 2px 0 0 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+#kur {
+    font-style: italic;
+}
+.inp { 
+    margin: 0 5px 0 0;
+    width: 480px;
+}
+
+.pole {
+    display: flex;
+    text-align: left;
+    width: 460px;
+    border: 1px solid #000;
+    min-height: 20px;
+    padding: 0
+}
+/* .pole {
+    display: flex;
+    text-align: left;
+    width: 460px;
+    border: 1px solid #000;
+    min-height: 20px;
+    padding: 0
+} */
+#ish {
+    border: none;
+    outline: none;
+    width: 440px;
+    vertical-align: middle;
+    min-height: 20px;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+#edit { 
+    margin: 0 0 0 0;
+    width: 20px;
+    min-height: 20px;
+}
+#moree { 
+    margin: 0 0 0 0;
+    width: 20px;
+    min-height: 20px;
+}
+
+.but { 
+    margin: 0px 0 0 107px;
+    text-align: left;
+    width: 470px;
+}
+#add { 
+    width: 150px;
+}
+#more {
+    width: 100px;
+}
+#print {
+    margin: 5px 0 0 0px 
+}
+p { 
+    width: 596px;
+    margin: 10px 10px 0 0;
+    text-align: right;
+}
+.line {
+    height: 2px;
+    margin: 20px 0 0 2px;
+    width: 596px;
+    background-color: rgb(173, 173, 172);
+}
+.foot {
+    width: 600px;
+    height: 50px;
+    background-color: rgb(209, 214, 214);
+}
+#move {
+    margin: 5px 0 0 5px;
+    width: 220px;
+}
+#start {
+    margin: 0 0 0 195px;
+    background-color: blueviolet;
+    border: 3px double rgb(160, 157, 157);
+    width: 80px;
+}
+#cansel {
+    margin: 0 0 0 5px;
+    background-color: blueviolet;
+    border: 3px double rgb(160, 157, 157);
+    width: 80px;
+}
+.res {
+    height: 10px;
+    width: 10px;
+    margin: 10px 0 0 588px;
+}
+#resize {
+    height: 10px;
+    width: 10px;
+    border: 0;
+    padding: 0;
+    background-color: rgb(209, 214, 214);
+}
