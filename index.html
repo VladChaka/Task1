@@ -12,18 +12,18 @@
             <p class="t">
                 План уничтожения пирожков
             </p>
-            <div class="menu">
+            <div>
                 <a href="">
-                    <button type="button" class="expand"><img src="img/expand.png"></button>
+                    <button type="button"><img src="img/expand.png"></button>
                 </a>  
                 <a href="">
-                    <button type="button" class="exit"><img src="img/close.png"></button>
+                    <button type="button"><img src="img/close.png"></button>
                 </a>
             </div>
         </header>
         <form class="content">
             <div>
-                <p>Начинка: <input type="text" class="kur inp" placeholder=" Введите значение..."></p>
+                <p class="inpy">Начинка: <input type="text" class="kur inp" placeholder=" Введите значение..."></p>
             </div>
             <div>        
                 <p>Форм-фактор: <input type="text" placeholder=" Ширина,высота" id="formFactor" class="inp"></p>
@@ -58,20 +58,26 @@
         <footer class="foot">
             <div class="line"></div>
             <div>
-                <a href="">
-                    <button type="button" class="move"><img src="img/redman.png">   Передать человеку в красном</button>
-                </a>
-                <a>
-                    <button type="button" class="start" onclick="formSizeNew();">Выполнить</button>
-                </a>
-                <a href="">
-                    <button type="button" class="cansel">Отменить</button>
-                </a>
-            </div>
-            <div class="res">
-                <button type="button" class="resize"><img src="img/resize.png"></button>
+                <div class="tt">
+                    <a href="" class="movee">
+                        <button type="button" class="move"><img src="img/redman.png">   Передать человеку в красном</button>
+                    </a>
+                    <div class="mar">
+                        <a>
+                            <button type="button" class="start" onclick="formSizeNew();">Выполнить</button>
+                        </a>
+                        <a href="">
+                            <button type="button" class="cansel">Отменить</button>
+                        </a>
+                    </div>
+                </div>  
+            <div>
+                <p class="res">
+                    <button type="button" class="resize"><img src="img/resize.png"></button>
+                </p>
             </div>
         </footer>  
+        
     </div>
 </body>
 </html>
