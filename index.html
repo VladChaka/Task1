@@ -7,8 +7,8 @@
     <script lang="javascript" src="script.js"></script>
 </head>
 <body>
-    <div id="form1" class="all">
-        <header class="header"> 
+    <div id="form1" class="all" onmouseover="dragAndDrop();">
+        <header id="head" class="header"> 
             <p class="t">
                 План уничтожения пирожков
             </p>
@@ -26,7 +26,7 @@
                 <p class="inpy">Начинка: <input type="text" class="kur inp" placeholder=" Введите значение..."></p>
             </div>
             <div>        
-                <p>Форм-фактор: <input type="text" placeholder=" Ширина,высота" id="formFactor" class="inp"></p>
+                <p>Форм-фактор: <input type="text" id="formFactor" value=" Моноблок" class="inp"></p>
             </div>
             <div class="isho">
                 <h0 class="textisho">Исход: </h0>
@@ -54,30 +54,27 @@
                 </div>
             </div>
         </form>
-        
         <footer class="foot">
             <div class="line"></div>
-            <div>
                 <div class="tt">
                     <a href="" class="movee">
-                        <button type="button" class="move"><img src="img/redman.png">   Передать человеку в красном</button>
+                      	<button type="button" class="move"><img src="img/redman.png">   Передать человеку в красном</button>
                     </a>
                     <div class="mar">
                         <a>
-                            <button type="button" class="start" onclick="formSizeNew();">Выполнить</button>
+                          	<button type="button" class="start">Выполнить</button>
                         </a>
                         <a href="">
-                            <button type="button" class="cansel">Отменить</button>
+                          	<button type="button" class="cansel">Отменить</button>
                         </a>
-                    </div>
-                </div>  
+					</div>
+            	</div>
             <div>
-                <p class="res">
-                    <button type="button" class="resize"><img src="img/resize.png"></button>
-                </p>
+            	<p class="res">
+              		<button type="button" id="resize" class="resizes" onmouseover="reSize(event);"><img src="img/resize.png"></button>
+              	</p>
             </div>
         </footer>  
-        
-    </div>
+	</div>
 </body>
 </html>
