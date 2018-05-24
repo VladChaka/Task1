@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> 
-    <script lang="javascript" src="script.js"></script>
+    <script lang="javascript" src="script.js" defer></script>
 </head>
 <body>
-    <div id="form1" class="all" onmouseover="dragAndDrop();">
+    <div id="form1" class="all">
         <header id="head" class="header"> 
             <p class="t">
                 План уничтожения пирожков
@@ -29,7 +29,7 @@
                 <p>Форм-фактор: <input type="text" id="formFactor" value=" Моноблок" class="inp"></p>
             </div>
             <div class="isho">
-                <h0 class="textisho">Исход: </h0>
+                <h6 class="textisho">Исход: </h6>
                 <div class="pole">
                     <input type="text" class="ish inp" value=" Благоприятный">
                     <a href="">
@@ -71,7 +71,7 @@
             	</div>
             <div>
             	<p class="res">
-              		<button type="button" id="resize" class="resizes" onmouseover="reSize(event);"><img src="img/resize.png"></button>
+              		<button type="button" id="resize" class="resizes"><img src="img/resize.png"></button>
               	</p>
             </div>
         </footer>  
