@@ -1,7 +1,8 @@
-function reSize(ev) {
+function reSize() {
 	let body = document.getElementById("form1");
 	let btnReSize = document.getElementById("resize");	
 
+	btnReSize.addEventListener("mousedown", mouseDown);
 	function mouseDown (ev) {
 		
 		function move(ev) {
@@ -15,27 +16,27 @@ function reSize(ev) {
 			body.style.height = ev.y + btnReSize.offsetHeight / 2 - top + "px";					
 		}
 
-		let mouseMove = function(event) {
+		document.addEventListener("mousemove", mouseMove);
+		function mouseMove() {
 			move(event);
 		}
-		document.addEventListener("mousemove", mouseMove);
-
-		let mouseUp = function() {
+		
+		document.addEventListener("mouseup", mouseUp);
+		function mouseUp() {
 			document.removeEventListener("mousemove", mouseMove);
 			btnReSize.removeEventListener("mouseup", mouseUp);
 		}
-		document.addEventListener("mouseup", mouseUp);
 	}
-	btnReSize.addEventListener("mousedown", mouseDown);
 }
 
-function dragAndDrop(event) {
+function dragAndDrop() {
 	let body = document.getElementById("form1"),
 		headBlock = document.getElementById("head");
 		
-	let mouseDown = function(event) {
+	headBlock.addEventListener("mousedown", mouseDown);
+	function mouseDown(event) {
+
 		function move(event) {
-			
 			let left = body.style.left,
 				top = body.style.top;
 
@@ -52,20 +53,18 @@ function dragAndDrop(event) {
 			body.style.top = top;
 		}
 		
-		let mouseMove = function(event) {
+		document.addEventListener("mousemove", mouseMove);
+		function mouseMove(event) {
 			move(event);
 		}
-		document.addEventListener("mousemove", mouseMove);
-
-		let mouseUp = function() {
+		
+		document.addEventListener("mouseup", mouseUp);	
+		function mouseUp() {
 			document.removeEventListener("mousemove", mouseMove);
 			headBlock.removeEventListener("mouseup", mouseUp);
-		}
-		document.addEventListener("mouseup", mouseUp);
-		
-	}
-	headBlock.addEventListener("mousedown", mouseDown);
+		}	
+	}	
 }
 
-reSize(event);
-dragAndDrop(event);
+reSize();
+dragAndDrop();
